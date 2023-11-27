@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Mobile Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script1.js"></script>
+
+  </head>
+
+
+<style>
+  h1{
+    font-weight: bold;
+  } 
+
+</style>
+<body>
+  <nav class="navbar navbar-expand-sm sticky-top">
+    <a class="navbar-brand" href="index.html">Mobile Store</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myList">
+        <span class="navbar-toggler-icon">
+            <i class="fas fa-bars"></i> <!-- Font Awesome hamburger icon -->
+        </span>
+    </button>
+    <div class="collapse navbar-collapse" id="myList">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="brandDropdown" data-toggle="dropdown">
+                    Mobile Brand
+                </a>
+                <div class="dropdown-menu" aria-labelledby="brandDropdown">
+                    <a id="a" class="dropdown-item disabled" href="samsung1.html">Samsung</a>
+                    <a class="dropdown-item" href="xiaomi.html">Xiaomi</a>
+                    <a class="dropdown-item" href="huawei.html">Huawei</a>
+                    <a  class="dropdown-item" href="apple.html">Apple</a>
+                    <a class="dropdown-item" href="google.html">Google</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<p></p>
+ 
+<section class="phones" >
+    <img src="Samsung_logo.jpg" class="card-img-top" style="height: 80%;width:60%">
+  
+    <p></p>
+  <div style="padding-top: 2%;padding-bottom: 2%;">
+    <div class="card-deck">
+      <div class="card">
+        <img src="s23 ultra.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title " >Galaxy S23Ultra</h5>
+          <p class="card-text" > 1200$</p>
+          <button class="btn btn-light" onclick="addItemToCart('Galaxy s23 ultra', 1200.00)">Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="s23 +.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Galaxy S23+</h5>
+          <p class="card-text"> 1000$</p>
+
+          <button class="btn btn-light" onclick="addItemToCart('Galaxy s23 +', 1000.00)">Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="s23 ..jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Galaxy S23</h5>
+          <p class="card-text"> 800$</p>
+
+          <button class="btn btn-light" onclick="addItemToCart('Galaxy s23', 800.00)">Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="s22 ultra.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Galaxy S22Ultra</h5>
+          <p class="card-text"> 1000$</p>
+          <button class="btn btn-light" onclick="addItemToCart('Galaxy s22 ultra', 1000.00)">Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="s22+.jpg" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">Galaxy S22+</h5>
+          <p class="card-text">800$</p>
+
+          <button class="btn btn-light" onclick="addItemToCart('Galaxy s22 +', 800.00)">Add to cart</button>
+        </div>
+      </div>
+      
+    </div>
+    <p></p>
+    <div class="card-deck">
+      <div class="card">
+          <img src="s22.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Galaxy S22</h5>
+            <p class="card-text"> 750$</p>
+
+            <button class="btn btn-light" onclick="addItemToCart('Galaxy s22', 750.00)">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="s21 ultra.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Galaxy S21Ultra</h5>
+            <p class="card-text"> 800$</p>
+
+            <button class="btn btn-light" onclick="addItemToCart('Galaxy s21 ultra', 800.00)">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="s21+.jpg" class="card-img-top"style="height: 65%; width: 68%">
+          <div class="card-body">
+            <h5 class="card-title">Galaxy S21+</h5>
+            <p class="card-text"> 650$</p>
+
+            <button class="btn btn-light" onclick="addItemToCart('Galaxy s21 +', 650.00)">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="s21.jpg" class="card-img-top"style="height: 70%; width: 68%">
+          <div class="card-body">
+            <h5 class="card-title">Galaxy S21</h5>
+            <p class="card-text"> 600$</p>
+
+            <button class="btn btn-light" onclick="addItemToCart('Galaxy s21', 600.00)">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="s21fe.jpg" class="card-img-top" style="height: 70%; width: 68%">
+          <div class="card-body">
+            <h5 class="card-title">Galaxy S21FE</h5>
+            <p class="card-text"> 550$</p>
+            <button class="btn btn-light" onclick="addItemToCart('Galaxy s21 fe', 550.00)">Add to cart</button>
+          </div>
+        </div>        
+        
+      </div>
+      <p></p>
+      <div class="card-deck">
+        <div class="card">
+        <img src="s20ultra.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Galaxy S20Ultra</h5>
+          <p class="card-text"> 550$</p>
+
+          <button class="btn btn-light" onclick="addItemToCart('Galaxy s20 ultra', 550.00)">Add to cart</button>
+        </div>
+        </div>
+        <div class="card">
+            <img src="s20+.jpg" class="card-img-top" style="height: 70%; width: 78%" >
+            <div class="card-body">
+              <h5 class="card-title">Galaxy S20+</h5>
+              <p class="card-text"> 450$</p>
+
+              <button class="btn btn-light" onclick="addItemToCart('Galaxy s20 +', 450.00)">Add to cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="s20.jpg" class="card-img-top" style="height: 70%; width: 78%" >
+            <div class="card-body">
+              <h5 class="card-title">Galaxy S20 </h5>
+              <p class="card-text"> 400$</p>
+
+              <button class="btn btn-light" onclick="addItemToCart('Galaxy s20', 400.00)">Add to cart</button>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="s20fe.jpg" class="card-img-top" style="height: 90%; width: 85%">
+            <div class="card-body">
+              <h5 class="card-title">Galaxy S20FE</h5>
+              <p class="card-text"> 350$</p>
+
+              <button class="btn btn-light" onclick="addItemToCart('Galaxy s20 fe', 350.00)">Add to cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="a53.jpg" class="card-img-top"style="height: 100%; width: 100%" >
+            <div class="card-body">
+              <h5 class="card-title">Galaxy A53</h5>
+              <p class="card-text"> 400$</p>
+
+              <button class="btn btn-light" onclick="addItemToCart('Galaxy a53 ', 400.00)">Add to cart</button>
+            </div>
+          </div>
+          
+        </div>
+        <div id="cart-popup" class="popup">
+          <div class="popup-content">
+              <h2>Product Added to Cart</h2>
+              <p>Your product has been added to the cart.</p>
+              <button class="btn btn-light" onclick="closePopup()">Close</button>
+          </div>
+      </div>
+        <footer>
+          <div class="container">
+            <div class="footer-top">
+              <h2 class="a1">Mobile Store</h2>
+            </div>
+            <div class="footer-info">
+              <div class="contact-info">
+                <h4>Contact Information</h4>
+                <p><strong>Address:</strong> 123 Main St, Anytown USA</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> info@mobilestore.com</p>
+              </div>
+              <br>
+              <div class="opening-hours">
+                <h4>Opening Hours</h4>
+                <p><strong>Mon - Fri:</strong> 9am - 7pm</p>
+                <p><strong>Sat:</strong> 10am - 6pm</p>
+                <p><strong>Sun:</strong> 11am - 5pm</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        
+     </main>
+     </body> 
+  </html>
+  

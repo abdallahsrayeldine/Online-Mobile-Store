@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Mobile Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script1.js"></script>
+
+  </head>
+
+
+<style>
+  h1,h3{
+    font-weight: bold;
+  }
+
+footer{
+margin-top: 1rem;
+}
+#footer-title{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 0.3rem 0;
+  color: #ff9800;
+
+}
+.footer{
+  display: grid;
+  padding: 5rem 2rem;
+  grid-template-columns: auto auto;
+  grid-gap: 2rem;
+  font-size: 0.9rem;
+}
+.footer  h3{
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #ff9800;
+}
+.footer ul li{
+  list-style-type: none;
+  line-height: 1.5rem;
+}
+.footer ul li a{
+  text-decoration: none;
+
+}
+.footer p{
+  line-height: 1.5rem;
+}
+
+.footer .social-media i{
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+.footer-right {
+    display:grid;
+    margin-left: 40%;
+}
+.footer-left {
+    display:grid;
+    margin-right: 40%;
+}
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-sm sticky-top">
+    <a class="navbar-brand" href="index.html">Mobile Store</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myList">
+        <span class="navbar-toggler-icon">
+            <i class="fas fa-bars"></i> <!-- Font Awesome hamburger icon -->
+        </span>
+    </button>
+    <div class="collapse navbar-collapse" id="myList">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="brandDropdown" data-toggle="dropdown">
+                    Mobile Brand
+                </a>
+                <div class="dropdown-menu" aria-labelledby="brandDropdown">
+                    <a class="dropdown-item" href="samsung1.html">Samsung</a>
+                    <a class="dropdown-item" href="xiaomi.html">Xiaomi</a>
+                    <a class="dropdown-item" href="huawei.html">Huawei</a>
+                    <a  class="dropdown-item" href="apple.html">Apple</a>
+                    <a class="dropdown-item" href="google.html">Google</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<p></p>
+
+<footer>
+    <p id="footer-title">Mobile Store</p>
+    <div class="footer">
+        <div>
+            <ul>
+                <h3>Know About Us</h3>
+                <li><a id="about">Know Us</a></li>
+                <li><a id="Refund-policy">Refund Policy</a></li>
+                <li><a id="policy">Our Policy</a></li>
+                <li><a id="return-product">How to Return ?</a></li>
+                <li><a id="terms">Term & Conditions</a></li>
+                <li><a id="privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div >
+
+            <ul>
+                <h3>Contact Us</h3>
+                <li><i class="fa fa-facebook"></i><a id="facebook">Facebook</a></li>
+                <li><i class="fa fa-twitter"></i><a id="twitter">Twitter</a></li>
+                <li><i class="fa fa-instagram"></i><a id="facebook">Instagram</a></li>
+                <li><i class="fa fa-telegram"></i><a id="facebook">Telegram</a></li>
+            </ul>
+        </div>
+      <div >
+      
+      <ul>
+        <li><h3>Our Location</h3></li>
+        <li>123 Main St, Anytown USA</li>
+        <li>Phone: (123) 456-7890</li>
+        <li>Email: info@mobilestore.com</li>
+      </ul>
+      </div>
+      <div>
+        <ul>
+        <li><h3>Opening Hours</h3></li>
+        <li>Mon - Fri: 9am - 7pm</li>
+        <li>Sat: 10am - 6pm</li>
+        <li>Sun: 11am - 5pm</l1>
+      </ul>
+      </div>
+        <div>
+          <ul>
+            <li><h3>Office Address</h3></li>
+            <li>Building Ashiana,Cubbon Park,</li>
+            <li>Bengaluru,560103,</li>
+            <li>123 Main St, Anytown USA</li>
+            </ul>
+        </div>
+    </div>
+</html>
